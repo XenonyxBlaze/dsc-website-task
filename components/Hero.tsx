@@ -88,7 +88,7 @@ export default function CallToActionWithVideo() {
                 width={'full'}
                 overflow={'hidden'}>
                 <Image
-                alt={'Hero Image'}
+                alt={'DataScience Image'}
                 fit={'cover'}
                 align={'center'}
                 w={'100%'}
