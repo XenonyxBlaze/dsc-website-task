@@ -8,6 +8,7 @@ import Footer from '@/components/Footer'
 import About from '@/components/About'
 import Faculty from '@/components/Faculty'
 import TeamPanel from '@/components/TeamPanel'
+// import Events from '@/components/Events'
 
 //css
 import '@/styles/globals.css'

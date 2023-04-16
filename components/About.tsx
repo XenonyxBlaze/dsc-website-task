@@ -10,9 +10,9 @@ import {
   
 export default function AboutSection() {
   return (
-    <Box p={4} id='About' h='calc(100vh)'>
+    <Box p={4} id='About'>
       <Stack as={Container} maxW={'3xl'} textAlign={'center'}>
-          <Heading mt={10} mb={20} color={'blue.400'} fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
+          <Heading my={10} color={'blue.400'} fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
               About Us
           </Heading>
           <Text

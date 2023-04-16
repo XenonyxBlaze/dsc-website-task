@@ -40,8 +40,7 @@ export default function Nav() {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+      <Box w={'100%'} as='header' position={'fixed'} bg={useColorModeValue('gray.100', 'gray.900')} px={4} zIndex={5000}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
             <IconButton
               size={'md'}
@@ -90,6 +89,5 @@ export default function Nav() {
           </Box>
         ) : null}
       </Box>
-    </>
   );
 }
