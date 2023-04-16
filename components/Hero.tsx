@@ -12,95 +12,102 @@ import {
     createIcon,
     IconProps,
     useColorModeValue,
-  } from '@chakra-ui/react';
-  
+    calc,
+    } from '@chakra-ui/react';
+
 export default function CallToActionWithVideo() {
+
     return (
+        <Box id="hero">
         <Container maxW={'7xl'}>
         <Stack
+        // height to fill the screen
             align={'center'}
             spacing={{ base: 8, md: 10 }}
             py={{ base: 20, md: 28 }}
-            direction={{ base: 'column', md: 'row' }}>
-            <Stack flex={1} spacing={{ base: 5, md: 10 }}>
-            <Heading
-                lineHeight={1.1}
-                fontWeight={600}
-                fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
-                <Text
-                as={'span'}
-                position={'relative'}
-                >
-                Data Science Club
+            direction={{ base: 'column', md: 'row' }}
+            h='calc(100vh)'>
+            <Stack flex={1} spacing={{ base: 5, md: 10 }} padding={10} className='glassify' >
+                <Heading
+                    lineHeight={1.1}
+                    fontWeight={600}
+                    fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
+                    <Text
+                    as={'span'}
+                    position={'relative'}
+                    >
+                    Data Science Club
+                    </Text>
+                    <br />
+                    <Text as={'span'} color={'blue.400'}>
+                    VIT Bhopal
+                    </Text>
+                </Heading>
+                <Text color={useColorModeValue("gray.500","gray.50")}>
+                    We Are An Officially Recognized Community For Data Science From VIT Bhopal University.
+                    Welcome To The Universe Of Data So Called Data-Verse ,
+                    A Community Where We Learn | Create | Innovate To Counter Real Life Problems Using Concepts Of Data Science And Other Computer Science Diciplines.
                 </Text>
-                <br />
-                <Text as={'span'} color={'blue.400'}>
-                VIT Bhopal
-                </Text>
-            </Heading>
-            <Text color={'gray.500'}>
-                We Are An Officially Recognized Community For Data Science From VIT Bhopal University.
-                Welcome To The Universe Of Data So Called Data-Verse ,
-                A Community Where We Learn | Create | Innovate To Counter Real Life Problems Using Concepts Of Data Science And Other Computer Science Diciplines.
-            </Text>
-            <Stack
-                spacing={{ base: 4, sm: 6 }}
-                direction={{ base: 'column', sm: 'row' }}>
-                <Button
-                rounded={'full'}
-                size={'lg'}
-                fontWeight={'normal'}
-                px={6}
-                colorScheme={'blue'}
-                bg={'blue.400'}
-                _hover={{ bg: 'blue.500' }}>
-                Our Team
-                </Button>
-                <Button
-                rounded={'full'}
-                size={'lg'}
-                fontWeight={'normal'}
-                px={6}>
-                Join Us
-                </Button>
-            </Stack>
+                <Stack
+                    spacing={{ base: 4, sm: 6 }}
+                    direction={{ base: 'column', sm: 'row' }}>
+                    <Button
+                    rounded={'full'}
+                    size={'lg'}
+                    fontWeight={'normal'}
+                    px={6}
+                    colorScheme={'blue'}
+                    bg={'blue.400'}
+                    _hover={{ bg: 'blue.500' }}>
+                    Our Team
+                    </Button>
+                    <Button
+                    rounded={'full'}
+                    size={'lg'}
+                    fontWeight={'normal'}
+                    px={6}>
+                    Join Us
+                    </Button>
+                </Stack>
             </Stack>
             <Flex
             flex={1}
             justify={'center'}
             align={'center'}
             position={'relative'}
-            w={'full'}>
-            <Blob
-                w={'150%'}
-                h={'150%'}
-                position={'absolute'}
-                top={'-20%'}
-                left={0}
-                zIndex={-1}
-                color={useColorModeValue('blue.50', 'blue.400')}
-            />
-            <Box
-                position={'relative'}
-                height={'300px'}
-                rounded={'2xl'}
-                boxShadow={'2xl'}
-                width={'full'}
-                overflow={'hidden'}>
-                <Image
-                alt={'DataScience Image'}
-                fit={'cover'}
-                align={'center'}
-                w={'100%'}
-                h={'100%'}
-                src={
-                    'https://ok-interservice.com/media/images/datascience.width-1920.jpg'
-                }
+            w={'full'}
+            h='calc(100vh)'>
+                <Blob
+                    w={'150%'}
+                    h={'150%'}
+                    position={'absolute'}
+                    top={'-20%'}
+                    left={0}
+                    zIndex={-1}
+                    color={useColorModeValue('blue.200', 'blue.100')}
                 />
-            </Box>
+                <Box
+                    position={'relative'}
+                    height={'300px'}
+                    rounded={'2xl'}
+                    boxShadow={'2xl'}
+                    width={'full'}
+                    overflow={'hidden'}>
+                    <Image
+                    alt={'DataScience Image'}
+                    fit={'cover'}
+                    align={'center'}
+                    w={'100%'}
+                    h={'100%'}
+                    src={
+                        'https://ok-interservice.com/media/images/datascience.width-1920.jpg'
+                    }
+                    />
+                </Box>
             </Flex>
         </Stack>
         </Container>
+        </Box>
     );
 }
 
@@ -108,7 +115,7 @@ export const Blob = (props: IconProps) => {
     return (
         <Icon
         width={'100%'}
-        viewBox="0 10 100 150"
+        viewBox="10 100 140 10"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         {...props}>

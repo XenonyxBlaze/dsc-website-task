@@ -63,7 +63,7 @@ const socialsDetail = [
         icon: <FaInstagram />
     },
     {
-        label: 'Twitter',
+        label: 'Linkedin',
         href:'https://www.linkedin.com/in/data-science-club-vit-bhopal-5b9b02232',
         icon: <FaLinkedin />
     },

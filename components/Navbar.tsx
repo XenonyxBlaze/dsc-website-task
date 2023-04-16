@@ -2,26 +2,19 @@ import { ReactNode } from 'react';
 import {
   Box,
   Flex,
-  Avatar,
   Link,
   Image,
   IconButton,
   Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   useColorModeValue,
   HStack,
   Stack,
   useColorMode,
-  Center,
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon, HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
-const NavLink = ({ children }: { children: ReactNode }) => (
+const NavLink = ({ children,href }: { children: ReactNode, href: string }) => (
   <Link
     px={2}
     py={1}
@@ -30,12 +23,18 @@ const NavLink = ({ children }: { children: ReactNode }) => (
       textDecoration: 'none',
       bg: useColorModeValue('blue.200', 'blue.700'),
     }}
-    href={'#'}>
+    onClick={() => {
+      let element = document.getElementById(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }}
+    >
     {children}
   </Link>
 );
 
-const Links = ['Home', 'About', "Blogs", "Team", "Events", 'Contact'];
+const Links = ['About', "Faculty", "Team", "Events", "Blogs"];
 
 export default function Nav() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -54,19 +53,21 @@ export default function Nav() {
 
             <HStack spacing={8} alignItems={'center'}>
               <Box>
-                <Image
-                  boxSize="50px"
-                  src="logo.png"
-                  alt="logo"
-                >
-                </Image>
+                <a href='#'>
+                  <Image
+                    boxSize="50px"
+                    src="logo.png"
+                    alt="logo"
+                  >
+                  </Image>
+                </a>
               </Box>
               <HStack
                 as={'nav'}
                 spacing={4}
                 display={{ base: 'none', md: 'flex' }}>
                 {Links.map((link) => (
-                    <NavLink key={link}>{link}</NavLink>
+                    <NavLink key={link} href={link}>{link}</NavLink>
                 ))}
               </HStack>
             </HStack>
@@ -79,6 +80,15 @@ export default function Nav() {
                 </Stack>
             </Flex>
         </Flex>
+        {isOpen ? (
+          <Box pb={4} display={{ md: 'none' }}>
+            <Stack as={'nav'} spacing={4}>
+              {Links.map((link) => (
+                <NavLink key={link} href={link}>{link}</NavLink>
+              ))}
+            </Stack>
+          </Box>
+        ) : null}
       </Box>
     </>
   );
