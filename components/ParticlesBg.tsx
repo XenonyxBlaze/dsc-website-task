@@ -3,72 +3,7 @@ import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 
-const options = {
-    fpsLimit: 120,
-    interactivity: {
-        events:{
-            onClick: {
-                enable: false,
-            },
-            onHover: {
-                enable: true,
-                mode: "repulse",
-            },
-            resize: true,
-        },
-        modes: {
-            repulse:{
-                distance: 100,
-                duration: 0.4,
-            },
-        }
-    },
-    particles: {
-        color: {
-            value: "#4299E1"
-        },
-        links: {
-            color: "#90CDF4",
-            distance: 150,
-            enable: true,
-            opacity: 0.5,
-            width: 1,
-        },
-        collisions: {
-            enable: false,
-        },
-        move: {
-            enable: true,
-            outModes: {
-                default: "bounce",
-            },
-            random: true,
-            speed: 2,
-            straight: false,
-        },
-        number: {
-            density: {
-                enable: true,
-                area: 800,
-            },
-            value: 80,
-        },
-        opacity: {
-            value: 0.5,
-        },
-        shape: {
-            type: "triangle",
-        },
-        size: {
-            value: {min:1, max:5},
-        },
-    },
-    detectRetina: true,
-    fullScreen: false,
-
-};
-
-export default function particlesBG() {
+export default function ParticlesBg() {
     const particlesInit = useCallback(async (engine: Engine) => {
         console.log(engine);
 
@@ -87,7 +22,70 @@ export default function particlesBG() {
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
-            options={options}
+            options={{
+                fpsLimit: 120,
+                interactivity: {
+                    events:{
+                        onClick: {
+                            enable: false,
+                        },
+                        onHover: {
+                            enable: true,
+                            mode: "repulse",
+                        },
+                        resize: true,
+                    },
+                    modes: {
+                        repulse:{
+                            distance: 100,
+                            duration: 0.4,
+                        },
+                    }
+                },
+                particles: {
+                    color: {
+                        value: "#4299E1"
+                    },
+                    links: {
+                        color: "#90CDF4",
+                        distance: 150,
+                        enable: true,
+                        opacity: 0.5,
+                        width: 1,
+                    },
+                    collisions: {
+                        enable: false,
+                    },
+                    move: {
+                        enable: true,
+                        outModes: {
+                            default: "bounce",
+                        },
+                        random: true,
+                        speed: 2,
+                        straight: false,
+                    },
+                    number: {
+                        density: {
+                            enable: true,
+                            area: 800,
+                        },
+                        value: 80,
+                    },
+                    opacity: {
+                        value: 0.5,
+                    },
+                    shape: {
+                        type: "triangle",
+                    },
+                    size: {
+                        value: {min:1, max:5},
+                    },
+                },
+                detectRetina: true,
+                fullScreen: false,
+            
+            }}
             style={
                 {
                     position: "absolute",
