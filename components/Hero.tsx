@@ -58,7 +58,12 @@ export default function CallToActionWithVideo() {
                     px={6}
                     colorScheme={'blue'}
                     bg={'blue.400'}
-                    _hover={{ bg: 'blue.500' }}>
+                    _hover={{ bg: 'blue.500' }}
+                    onClick={
+                        () => {
+                            document.getElementById('Team').scrollIntoView({behavior: 'smooth'});
+                        }
+                    }>
                     Our Team
                     </Button>
                     <Button

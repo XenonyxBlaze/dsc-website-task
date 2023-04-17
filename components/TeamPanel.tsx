@@ -12,14 +12,7 @@ import {
   useBreakpointValue,
   Image,
 } from '@chakra-ui/react';
-import { ReactElement } from 'react';
-import {
-  FcAbout,
-  FcAssistant,
-  FcCollaboration,
-  FcDonate,
-  FcManager,
-} from 'react-icons/fc';
+
 
 interface CardProps {
   name: string;
@@ -37,7 +30,7 @@ const Card = ({ name, desig, img }: CardProps) => {
       mt={20}
       mx={10}
       w={'full'}
-      bg={useColorModeValue('white', 'gray.800')}
+      bg={useColorModeValue('gray.200', 'gray.700')}
       boxShadow={'2xl'}
       rounded={'lg'}
       pos={'relative'}
@@ -45,17 +38,17 @@ const Card = ({ name, desig, img }: CardProps) => {
         
             <Image
               rounded={'lg'}
-              height={230}
-              width={282}
+              height={250}
+              width={200}
               objectFit={'cover'}
-              src={img}
+              src={'images/Team/'+img}
               />
         <Stack pt={10} align={'center'}>
           <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
             {name}
           </Heading>
           <Stack direction={'row'} align={'center'}>
-            <Text fontWeight={800} fontSize={'xl'}>
+            <Text color={useColorModeValue('blue.700','blue.300')} fontWeight={500} fontSize={'xl'}>
               {desig}
             </Text>
           </Stack>
@@ -129,25 +122,22 @@ const team = [
 
 export default function gridListWith() {
   return (
-    <Box p={4} id='Team'>
-      <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'} >
-        <Heading color={"blue.400"} fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
+    <Box p={4} mb={20} id='Team'>
+      <Container>
+        <Heading textAlign={'center'}  mt={20} mb={10} color={'blue.400'} fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
           Our Team
         </Heading>
-      </Stack>
-
-      <Container maxW={'5xl'} mt={12}>
-        <Flex flexWrap='wrap' justify="center">
-          {
-            team.map((banda)=>{
-              let charra = <>
-              <Card key={banda.key} name={banda.name} desig={banda.desig} img={banda.img} />
-              </>
-              return charra
-            })
-          }
-        </Flex>
       </Container>
+
+      <Flex flexWrap='wrap' justify="center">
+        {
+          team.map((banda)=>(
+            <>
+            <Card key={banda.key} name={banda.name} desig={banda.desig} img={banda.img} />
+            </>
+          ))
+        }
+      </Flex>
     </Box>
   );
 }

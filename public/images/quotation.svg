@@ -1,0 +1,61 @@
+<!-- "data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='29' height='21' viewBox='0 0 29 21' fill='none'%3E%3Cpath d='M6.91391 21C4.56659 21 2.81678 20.2152 1.66446 18.6455C0.55482 17.0758 0 15.2515 0 13.1727C0 11.2636 0.405445 9.43939 1.21634 7.7C2.0699 5.91818 3.15821 4.3697 4.48124 3.05454C5.84695 1.69697 7.31935 0.678787 8.89845 0L13.3157 3.24545C11.5659 3.96667 9.98676 4.94242 8.57837 6.17273C7.21266 7.36061 6.25239 8.63333 5.69757 9.99091L6.01766 10.1818C6.27373 10.0121 6.55114 9.88485 6.84989 9.8C7.19132 9.71515 7.63944 9.67273 8.19426 9.67273C9.34658 9.67273 10.4776 10.097 11.5872 10.9455C12.7395 11.7939 13.3157 13.1091 13.3157 14.8909C13.3157 16.8848 12.6542 18.4121 11.3311 19.4727C10.0508 20.4909 8.57837 21 6.91391 21ZM22.5982 21C20.2509 21 18.5011 20.2152 17.3488 18.6455C16.2391 17.0758 15.6843 15.2515 15.6843 13.1727C15.6843 11.2636 16.0898 9.43939 16.9007 7.7C17.7542 5.91818 18.8425 4.3697 20.1656 3.05454C21.5313 1.69697 23.0037 0.678787 24.5828 0L29 3.24545C27.2502 3.96667 25.6711 4.94242 24.2627 6.17273C22.897 7.36061 21.9367 8.63333 21.3819 9.99091L21.702 10.1818C21.9581 10.0121 22.2355 9.88485 22.5342 9.8C22.8756 9.71515 23.3238 9.67273 23.8786 9.67273C25.0309 9.67273 26.1619 10.097 27.2715 10.9455C28.4238 11.7939 29 13.1091 29 14.8909C29 16.8848 28.3385 18.4121 27.0155 19.4727C25.7351 20.4909 24.2627 21 22.5982 21Z' fill='%239F7AEA'/%3E%3C/svg%3E" -->
+<svg fill="#4ca5dc" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" stroke="#4ca5dc">
+    <!-- <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+    <g id="SVGRepo_iconCarrier"> 
+        <rect id="Icons" x="-640" y="0" width="1280" height="800" style="fill:none;"></rect> 
+        <g id="Icons1" serif:id="Icons"> 
+            <g id="Strike"> </g> 
+            <g id="H1"> </g> 
+            <g id="H2"> </g> 
+            <g id="H3"> </g> 
+            <g id="list-ul"> </g> 
+            <g id="hamburger-1"> </g> 
+            <g id="hamburger-2"> </g> 
+            <g id="list-ol"> </g> 
+            <g id="list-task"> </g> 
+             -->
+            <path id="quote-1" d="M27.194,12l0,8.025c-2.537,0.14 -4.458,0.603 -5.761,1.39c-1.304,0.787 -2.22,2.063 -2.749,3.829c-0.528,1.766 -0.793,4.292 -0.793,7.579l9.303,0l0,19.145l-19.081,0l0,-18.201c0,-7.518 1.612,-13.025 4.836,-16.522c3.225,-3.497 7.973,-5.245 14.245,-5.245Zm28.806,0l0,8.025c-2.537,0.14 -4.457,0.586 -5.761,1.338c-1.304,0.751 -2.247,2.028 -2.828,3.829c-0.581,1.8 -0.872,4.344 -0.872,7.631l9.461,0l0,19.145l-19.186,0l0,-18.201c0,-7.518 1.603,-13.025 4.809,-16.522c3.207,-3.497 7.999,-5.245 14.377,-5.245Z" style="fill-rule:nonzero;"></path> 
+            
+            <!-- <g id="trash"> </g> 
+            <g id="vertical-menu"> </g> 
+            <g id="horizontal-menu"> </g> 
+            <g id="sidebar-2"> </g> 
+            <g id="Pen"> </g> 
+            <g id="Pen1" serif:id="Pen"> </g> 
+            <g id="clock"> </g> 
+            <g id="external-link"> </g> 
+            <g id="hr"> </g>  -->
+            <!-- <g id="info"> </g> 
+            <g id="warning"> </g> 
+            <g id="plus-circle"> </g> 
+            <g id="minus-circle"> </g> 
+            <g id="vue"> </g> 
+            <g id="cog"> </g> 
+            <g id="logo"> </g>  -->
+            <!-- <g id="radio-check"> </g> 
+            <g id="eye-slash"> </g> 
+            <g id="eye"> </g> 
+            <g id="toggle-off"> </g> 
+            <g id="shredder"> </g>  -->
+            <g id="spinner--loading--dots-" serif:id="spinner [loading, dots]"> </g> 
+            <!-- <g id="react"> </g> 
+            <g id="check-selected"> </g> 
+            <g id="turn-off"> </g> 
+            <g id="code-block"> </g> 
+            <g id="user"> </g> 
+            <g id="coffee-bean"> </g> 
+            <g id="coffee-beans"> 
+                <g id="coffee-bean1" serif:id="coffee-bean"> </g>  -->
+            <!-- </g> 
+            <g id="coffee-bean-filled"> </g> 
+            <g id="coffee-beans-filled"> 
+                <g id="coffee-bean2" serif:id="coffee-bean"> </g> 
+            </g> 
+            <g id="clipboard"> </g> 
+            <g id="clipboard-paste"> </g> 
+            <g id="clipboard-copy"> </g> 
+            <g id="Layer1"> </g> 
+        </g> 
+    </g> -->
+</svg>

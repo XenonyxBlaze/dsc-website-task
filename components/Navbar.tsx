@@ -24,6 +24,9 @@ const NavLink = ({ children,href }: { children: ReactNode, href: string }) => (
       bg: useColorModeValue('blue.200', 'blue.700'),
     }}
     onClick={() => {
+      if (href === 'Blogs') {
+        window.open('https://medium.com/@DatascienceClub.VIT-B');
+      }
       let element = document.getElementById(href);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
@@ -55,7 +58,7 @@ export default function Nav() {
                 <a href='#'>
                   <Image
                     boxSize="50px"
-                    src="logo.png"
+                    src="images/logo.png"
                     alt="logo"
                   >
                   </Image>
@@ -82,9 +85,11 @@ export default function Nav() {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
-              {Links.map((link) => (
+              {Links.map((link) => 
+               (
                 <NavLink key={link} href={link}>{link}</NavLink>
-              ))}
+               )
+              )}
             </Stack>
           </Box>
         ) : null}

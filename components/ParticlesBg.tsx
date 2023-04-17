@@ -31,14 +31,13 @@ export default function ParticlesBg() {
                         },
                         onHover: {
                             enable: true,
-                            mode: "repulse",
+                            mode: "grab",
                         },
                         resize: true,
                     },
                     modes: {
-                        repulse:{
-                            distance: 100,
-                            duration: 0.4,
+                        grab:{
+                            distance: 200,
                         },
                     }
                 },

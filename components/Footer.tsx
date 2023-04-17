@@ -14,7 +14,7 @@ import { ReactNode } from 'react';
 
 const Logo = (props: any) => {
   return (
-    <Image boxSize='50px' src='logo.png' />
+    <Image boxSize='50px' src='images/logo.png' />
   );
 };
 
@@ -48,8 +48,6 @@ const SocialButton = ({
     </chakra.button>
   );
 };
-
-const socials = ['Twitter','Instagam','Linkeedin','Github','Youtube']
 
 const socialsDetail = [
     {
