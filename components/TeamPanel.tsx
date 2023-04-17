@@ -41,7 +41,7 @@ const Card = ({ name, desig, img }: CardProps) => {
               height={250}
               width={200}
               objectFit={'cover'}
-              src={'images/Team/'+img}
+              src={'images/team/'+img}
               />
         <Stack pt={10} align={'center'}>
           <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
