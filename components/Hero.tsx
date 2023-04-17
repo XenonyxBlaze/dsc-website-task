@@ -61,7 +61,7 @@ export default function CallToActionWithVideo() {
                     _hover={{ bg: 'blue.500' }}
                     onClick={
                         () => {
-                            document.getElementById('Team').scrollIntoView({behavior: 'smooth'});
+                            document?.getElementById('Team')?.scrollIntoView({behavior: 'smooth'});
                         }
                     }>
                     Our Team
